@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service id="ktp-haze-facebook-im">
+  <type>IM</type>
+
+  <name>Messenger</name>
+  <icon>im-facebook</icon>
+  <provider>ktp-haze-facebook</provider>
+  <translations>kaccounts-providers</translations>
+
+  <template>
+      <group name="telepathy">
+          <setting name="manager">haze</setting>
+          <setting name="protocol">facebook</setting>
+      </group>
+      <group name="auth">
+          <setting name="method">password</setting>
+          <setting name="mechanism">password</setting>
+      </group>
+  </template>
+</service>
